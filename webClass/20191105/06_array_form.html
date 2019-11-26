@@ -1,0 +1,18 @@
+<script>
+function cal(){
+  var total;
+  var n = document.form1.n1.value;
+  var m = document.form1.midterm.value;
+  var f = document.form1.final.value;
+  total = parseInt(m) + parseInt(f);
+  var avg = total / 2;
+  alert(n + " 학생 평균 성적 : " + avg + "점 입니다");
+}
+document.write("");
+</script>
+<form name="form1">
+이름 : <input type="text" name="n1" /><br>
+중간 : <input type="text" name="midterm" /><br>
+기말 : <input type="text" name="final" /><hr>
+<button onclick="cal();">평균계산</button>
+</form>

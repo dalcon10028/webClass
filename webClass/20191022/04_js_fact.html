@@ -1,0 +1,22 @@
+<html>
+  </head>
+  <meta charset="utf-8">
+  <title>자바스크립트 예제</title>
+  </head>
+  <body>
+    <p id="factorial">팩토리얼!</p>
+    <script>
+      function fact(n){
+        var res=1;
+        for(var i=1; i<=n; i++)
+          res = res * i;
+        return res;
+      }
+      var x;
+      x = prompt("팩토리얼 넘버 입력");
+      //document.write(fact(x));
+      alert(fact(x));
+      //document.getElementById('factorial').innerHTML = fact(x);
+    </script>
+  </body>
+</html>

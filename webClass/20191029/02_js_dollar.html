@@ -1,0 +1,40 @@
+<html>
+  </head>
+  <meta charset="utf-8">
+  <title>자바스크립트 예제</title>
+  </head>
+  <body>
+    <p id="dollar">달러 찍기</p>
+    <script>
+      var x;
+      var line = "";
+      n = prompt("갯수 입력");
+      for(var a = 0; a < n; a++){
+        for(var i=n-a-1; i>0; i--){
+          line = line + "&nbsp;";
+        }
+        for(var s=0; s<(2*a+1); s++){
+          line = line + "$";
+        }
+        //line = line + '\n';
+        line = line + "<br>";
+      }
+      for(var a = n-2; a >= 0; a--){
+        for(var i=n-a-1; i>0; i--){
+          line = line + "&nbsp;";
+        }
+        for(var s=0; s<(2*a+1); s++){
+          line = line + "$";
+        }
+        //line = line + '\n';
+        line = line + "<br>";
+      }
+      //alert(line);
+      document.write(line);
+
+      //document.write(fact(x));
+      //alert(fact(x));
+      //document.getElementById('factorial').innerHTML = fact(x);
+    </script>
+  </body>
+</html>

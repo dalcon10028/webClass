@@ -1,0 +1,54 @@
+<html>
+  <meta charset="utf-8">
+  <meta name="Author" content="본인성명">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>자바스크립트 예제</title>
+  <script>
+    function reset_form(){
+      document.form1.h.value = "";
+      document.form1.w.value = "";
+      document.form1.w.focus();
+      document.form1.h.focus();
+      return;
+    }
+    function check_input(){
+      var res;
+      h = document.form1.h.value;
+      w = document.form1.w.value;
+      if(!h){
+        alert("키를 입력하세요");
+        document.form1.h.focus();
+        return;
+      }
+      if(!w){
+        alert("몸무게를 입력하세요");
+        document.form1.w.focus();
+        return;
+      }
+      result = Math.round(w/(h/100*h/100));
+      if (result < 20) res = "저체중";
+      else if (result < 25) res = "정상";
+      else if (result < 30) res = "과체중";
+      else if (result < 35) res = "비만";
+      else res = "고도비만";
+      document.form1.result.value=result;
+      document.getElementById('bmi').innerHTML = res;
+    }
+  </script>
+  </head>
+  <body>
+    <h1>키와 몸무게를 이용한 BMI 계산</h1>
+    <pre>
+      체질량지수 = 몸무게 / 키*키, 몸무게를 키의 제곱으로 나눈 값
+    </pre>
+    <form name="form1" method="post">
+      키:<input type="text" name=h>
+      몸무게:<input type="text" name=w>
+      <input type="button" value="확인" onclick="check_input()">
+      <input type="button" value="취소" onclick="reset_form()">
+      <br>
+      BMI: <input type="text" name=result>
+    </form>
+    <p id="bmi">상태</p>
+  </body>

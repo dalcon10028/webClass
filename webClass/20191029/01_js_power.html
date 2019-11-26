@@ -1,0 +1,30 @@
+<html>
+  </head>
+  <meta charset="utf-8">
+  <title>자바스크립트 예제</title>
+  </head>
+  <body>
+    <p id="factorial">거듭제곱!</p>
+    <script>
+      function fact(n){
+        var res=1;
+        for(var i=1; i<=n; i++)
+          res = res * i;
+        return res;
+      }
+      function power(b, e){
+        var res=1;
+        for(var i=1; i<=e; i++)
+          res = res * b;
+        return res;
+      }
+      var x;
+      base = prompt("밑수 입력");
+      expo = prompt("지수 입력");
+      alert(power(base, expo));
+      //document.write(fact(x));
+      //alert(fact(x));
+      //document.getElementById('factorial').innerHTML = fact(x);
+    </script>
+  </body>
+</html>

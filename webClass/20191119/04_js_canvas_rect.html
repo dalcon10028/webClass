@@ -1,0 +1,17 @@
+<html>
+<head>
+</head>
+<body>
+  <canvas id="myCanvas" width="300" height="300"></canvas>
+<script>
+  var c = document.getElementById("myCanvas");
+  var context = c.getContext("2d");
+  context.fillStyle="yellow";
+  context.beginPath();
+  context.rect(10,10,100,100);
+  context.rect(50,50,100,200);
+  context.stroke();
+  //context.fill();
+</script>
+</body>
+</html>

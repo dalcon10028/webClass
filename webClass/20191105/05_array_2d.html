@@ -1,0 +1,18 @@
+<script>
+var student = new Array(Array('강민성','컴공',88,76),
+  Array('김정아','수학',70,83),Array('신대림','행정',92,95),
+  Array('박대림','물리',85,92),Array('김대림','건축',97,88)
+)
+document.write("<h1>성적테이블</h1>");
+document.write("<table border=1>");
+document.write("<tr><td>이름</td><td>전공</td><td>중간</td><td>기말</td></tr>");
+
+for(var i=0; i<5; i++){
+  document.write("<tr>");
+    for(var j=0; j<4; j++){
+      document.write("<td>"+student[i][j]+"</td>");
+    }
+  document.write("</tr>");
+}
+document.write("</table>");
+</script>

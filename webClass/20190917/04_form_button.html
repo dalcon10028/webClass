@@ -1,0 +1,34 @@
+<HTML>
+  <HEAD>
+    <TITLE>FORM TAG _ BUTTON</TITLE>
+  </HEAD>
+  <BODY>
+    <HR>
+    <FORM METHOD="GET">
+      회원님의 국적과 여행한 국가를 선택하세요.
+      국적:<SELECT NAME="COUNTRY" MULTIPLE>
+            <OPTION VALUE="FRANCE">프랑스</OPTION>
+            <OPTION VALUE="KOREA" SELECTED>대한민국</OPTION>
+            <OPTION VALUE="USA" SELECTED>쌀국</OPTION>
+            <OPTION VALUE="OTHERS">기타</OPTION>
+          </SELECT>
+    <HR>
+    <A HREF="HTTPS://WWW.W3SCHOOLS.COM/HTML/" TARGET="_BLANK">
+      <BUTTON TYPE="BUTTON">HTML5 배우기</BUTTON>
+    </A><BR>
+    <A HREF="HTTPS://WWW.W3SCHOOLS.COM/CSS/" TARGET="_BLANK">
+      <BUTTON TYPE="BUTTON">CSS3 배우기</BUTTON>
+    </A>
+    <HR>
+      <BUTTON TYPE="BUTTON" ONCLICK="alert('버튼 누름~');">클릭!</BUTTON>
+      <BR><BR>
+      글남기기<INPUT TYPE="TEXT" NAME="USERID" SIZE="35"/>
+      <BUTTON TYPE="SUBMIT">저장</BUTTON>
+      <BUTTON TYPE="RESET">취소</BUTTON><BR><BR>
+      방명록 작성<HR>
+      <TEXTAREA ROWS="5" COLS="50" NAME="MEMO">
+        글 남겨주세요.
+      </TEXTAREA><HR>
+    </FORM>
+  </BODY>
+</HTML>

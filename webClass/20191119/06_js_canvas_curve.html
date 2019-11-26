@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+  <canvas id="myCanvas" width="300" height="300"></canvas>
+<script>
+  var c = document.getElementById("myCanvas");
+  var context = c.getContext("2d");
+
+  context.beginPath();
+  context.moveTo(90,130);
+  context.bezierCurveTo(140,10,288,10,288,130);
+  context.strokeStyle="blue";
+  context.lineWidth = 10;
+  context.stroke();
+</script>
+</body>
+</html>

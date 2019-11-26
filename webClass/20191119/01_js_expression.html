@@ -1,0 +1,22 @@
+<script type="text/javascript">
+  function checkNumber(elem, msg){
+    var exp = /^[a-zA-Z0-9_.-]+$/;
+    //var exp = /^[0-9]+$/;
+    //var exp = /abc/;
+    //var exp = /./;
+    //var exp = /\d\d\d/;
+    if(elem.value.match(exp)){
+      return true;
+    }else{
+      alert(msg);
+      elem.focus()
+      return false;
+    }
+  }
+</script>
+<form>
+전화번호(-없이 입력):<input type="text" id="phone"/>
+<input type='button'
+onclick="checkNumber(document.getElementById('phone'),'숫자만 입력하세요!')"
+value='확인' />
+</form>
