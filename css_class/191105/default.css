@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&display=swap&subset=korean');
+
+*{padding: 0; margin: 0;}
+ul li{list-style: none; float: left;}
+a{text-decoration: none; color: #333333;}
+body{font-size: 12px; color: #333333; font-family: 'Noto Sans KR', sans-serif; line-height: 1.5;}

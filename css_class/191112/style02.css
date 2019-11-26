@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Poor+Story&display=swap&subset=korean');
+
+body{ font-family: 'Poor Story', cursive; }
+header{ background-color: deepskyblue; }
+h1{ color: seashell; text-align: center; padding: 0.5rem 0;}
+nav{ margin: .5rem 0; background-color: lightseagreen;}
+nav ul{overflow: hidden; margin-left: 15%;}
+nav ul li{
+    float: left;
+    color:seashell;
+    width: 15%;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+    border-right: green 2px solid;
+}
+nav ul li:first-child{border-left: green 2px solid;}
+section{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 80%;
+}
+aside{ 
+    float: left;
+    width: 30%;
+}
+aside .contents{
+    height: 130px; 
+    padding: 20px 0 0 20px;
+    margin-bottom: 10px;
+    background-color: bisque;
+}
+aside .contents h2{
+    margin-bottom: 10px;
+}
+article{ float: right; width: 65%; }
+article .contents{
+    margin-bottom: 1rem;
+    border-bottom: 1px solid green;
+}
+article .contents p {
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+footer{
+    border-top: 3px solid #cccccc;
+    text-align: center;
+    padding: 1rem 0;
+}
+/* 760-960 */
+
+@media screen and (max-width:960px) {
+    aside{width: 100%;float: none;overflow: hidden;}
+    article{width: 100%; float: none;}
+    aside .contents{width: 45%;}
+    aside .contents:first-child{float: left;}
+    aside .contents:last-child{float: right;}
+}
+
+@media screen and (max-width:760px){
+    nav ul{margin-left: 0;}
+    nav ul li{
+    float: none;
+    width: 100%;
+    border-bottom: green 2px solid;
+    }
+    nav ul li:first-child{border-left:none;}
+    nav ul li:last-child{border-bottom: none;}
+    aside .contents{width: 100%;}
+    aside .contents:first-child{float: none;}
+    aside .contents:last-child{float: none;}
+}

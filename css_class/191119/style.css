@@ -1,0 +1,75 @@
+#wrap{
+    width: 100%;
+    max-width: 960px;
+    /* 960보다 작은 사이즈면 100%크기 */
+}
+
+/* 768이하 모바일 */
+header{
+    text-align: center;
+}
+header p img{
+    width: 100%; max-width: 960px;
+}
+header ul li{
+    margin: .7rem;
+    display: inline;
+    float: none;
+}
+header ul li a:hover{
+    color: darkturquoise;
+}
+/* 네비 */
+nav ul li{
+    width: 100%;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+nav ul li a{display: block; padding: .2rem 0;}
+nav ul li a:hover{
+    background-color: lightblue;
+}
+nav ul li:nth-child(even){
+    background-color: #eeeeee;
+}
+/* 컨텐츠 */
+#imgList article{text-align: center;}
+#news, #info{padding: 1rem 0; width: 100%;}
+#news h3, #info h3{margin-bottom: 1rem; padding: 0 0 .4rem 1rem ; color: orangered; border-bottom: .5rem double black;}
+#news article{padding: 0 1rem;}
+#news article h4{margin: .8rem 0;}
+#news article p{padding-bottom: .3rem; border-bottom: 1px solid #cccccc;}
+
+#info ul li{float: none; padding: .2rem 0; text-align: center;}
+#info ul li img{width: 100%; max-width: 419px;}
+
+footer{padding: .8rem 0 2rem 0; border-top: .3rem solid black; text-align: center;}
+
+/* 768이상 테블릿 */
+
+@media screen and (min-width:768px){
+    nav ul{overflow: hidden;}
+    nav ul li{box-sizing: border-box; width: 50%;}
+    nav ul li a{display: block; padding: .2rem 0}
+    nav ul li:nth-child(even){background-color: white;}
+    nav ul li:nth-child(odd){border-right: 1px solid black;}
+
+    #contents{overflow: hidden;}
+    #imgList article{float: left; width: 50%;}
+    #news{float: left; width: 49%;}
+    #info{float: right; width: 49%;};
+}
+
+@media screen and (min-width:960px) {
+    header{overflow: hidden;}
+    header h1{float: left;}
+    header ul{float: right; margin-top: .7rem;}
+    nav{border-bottom: .3rem double black;}
+    nav ul li{box-sizing: border-box; width: 16.66%;border-right: 1px solid black;}
+    nav ul li:last-child{border-right: none;}
+
+    #imgList article{width: 25%;}
+    footer{text-align: left;}
+    footer p{margin-left: 1rem;}
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    *{
+    box-sizing: border-box; /*padding과 상관없이 float를 사용가능 */ 
+}
+
+.wrap{
+    width: 980px;
+    margin: 0 auto;
+    font-size: 36px;
+    font-weight: bold;
+}
+header{
+    height: 100px;
+    padding: 30px;
+    background-color: pink;
+}
+section{
+    height: 150px;
+    padding: 30px;
+    background-color: yellow;
+}
+.content{
+    overflow: hidden; /*footer의 clear both 대신 사용 */
+}
+aside{
+    padding: 30px;
+    float: left;
+    width: 300px;
+    height: 300px;
+    background-color: skyblue;
+}
+article{
+    padding: 30px;
+    float: left;
+    width: 680px;
+    height: 300px;
+    background-color: slateblue;
+}
+footer{
+    padding: 30px;
+    height: 100px;
+    background-color: teal;
+     
+}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            고정형 그리드 레이아웃
+        </header>
+        <section>
+            비주얼 영역
+        </section>
+        <div class="content">
+            <aside>
+                    어사이드
+            </aside>
+            <article>
+                    컨텐츠 내용
+            </article>
+        </div>
+
+        <footer>
+            푸터
+        </footer>
+    </div>   
+</body>
+</html>

@@ -1,0 +1,42 @@
+#wrap{
+    width: 320px;
+}
+h1{
+    margin: 10px 0;
+    text-align: center;
+}
+section{
+    width: 100%;
+}
+article{
+    margin-bottom: 13px;
+    height: 180px;
+    border: 2px solid dimgray;
+}
+#box1{background-color: thistle;}
+#box2{background-color: aquamarine;}
+#box3{background-color: darksalmon;}
+#box4{background-color: dodgerblue;}
+
+@media screen and (min-width:768px){
+    #wrap{
+        width: 768px;
+    }
+    section{
+        overflow: hidden;
+    }
+    article{
+        float: left;
+        margin: 1%;
+        width: 47%;
+    }
+}
+
+@media screen and (min-width:1024px){
+    #wrap{
+        width: 1024px;
+    }
+    article{
+        width: 22%;
+    }
+}

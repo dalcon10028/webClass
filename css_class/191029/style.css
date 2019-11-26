@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 768px;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    height: 70px;
+    line-height: 70px;
+    background-color: darkblue;
+    color: white;
+    padding-left: 15px;
+    border-bottom: 1px solid black;
+}
+nav{
+    overflow: hidden; /*float를 사용한 부모 선택자에게 줌 */
+    background-color: blueviolet;
+    border-bottom: 1px solid black;
+}
+.left{
+    float: left;
+    overflow: hidden;
+}
+.right{
+    float: right;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-left: 1px solid darkgray;
+    border-right: 1px solid darkslateblue;
+}
+#content{
+    overflow: hidden;
+    background-color: royalblue;
+}
+.main-menu{
+    float: left;
+    height: 300px;
+    width: 200px;
+}
+.main-menu ul li a{
+    display: block;
+    padding: 15px;
+    font-weight: bold;
+    border-top: 1px solid turquoise;
+    border-bottom: 1px solid dodgerblue;
+}
+.main-content{
+    float: none;
+    width: 100%;
+    margin-left: 200px;
+    background-color: white;
+    border-left: 1px solid black;
+}
+
+article{
+    padding: 15px;
+}
+footer{
+    padding: 15px;
+    text-align: center;
+    border-top: 3px solid black;
+}
